@@ -10,10 +10,8 @@ export default function TabLayout() {
   const colorScheme = useColorScheme();
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="home" options={{ title: 'Home' }} />
-      </Stack>
+      <AnimatedSplashOverlay />
+      <AppTabs />
     </ThemeProvider>
   );
 }
