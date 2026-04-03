@@ -59,7 +59,6 @@ export default function HomeScreen() {
 
         <TouchableOpacity onPress={() => {
           router.push('/home');
-          console.log('Navigating to Home');
         }}>
           <Text>Go to Home</Text>
         </TouchableOpacity>
